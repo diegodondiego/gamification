@@ -8,7 +8,7 @@ function mapAllEvents() {
 		if (thisEvent) {
 			$.each(thisEvent, function(attr, value) {
 					if (mappedEvents[attr]) {
-						mappedEvents[attr] = mappedEvents[attr] + 1
+						mappedEvents[attr] = mappedEvents[attr] + value.length
 					} else {
 						mappedEvents[attr] = 1
 					}
