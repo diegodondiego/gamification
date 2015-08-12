@@ -2,7 +2,7 @@ var mappedEvents = {};
 
 $('*').each(function() {
 
-	var thisEvent = jQuery._data($(this)[0], "events");
+	var thisEvent = jQuery._data($(this).get(0), "events");
 
 	if (thisEvent) {
 		$.each(thisEvent, function(attr, value) {
